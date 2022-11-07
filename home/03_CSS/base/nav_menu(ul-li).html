@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu1{
+            float: left;  
+        }
+        ul {
+            width: 600px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 10pt;
+        }
+        li ul{
+            position: absolute;
+            display: none;
+            margin-left: 177px;
+            margin-top: 2em;
+            width: 91px;
+        }
+        li a{
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+            color: grey;
+            border-radius: 3px;
+            border: 1px solid black;
+            background-color: rgb(221, 214, 214);
+        }
+        li a:hover{
+            color: grey;
+            border-radius: 3px;
+            border: 1px solid black;
+            background-color: rgb(221, 214, 214);
+        }
+        li:hover ul{
+            display: block;
+        }
+        .menu1{
+            width: 77px;
+        }
+    @media all and (max-width: 543px){
+
+        ul {
+            width: 100px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 10pt;
+        }
+        li ul{
+            position: absolute;
+            display: none;
+            margin-left: 88px;
+            margin-top: 4.2em;
+            width: 91px;
+        }
+        li a{
+            
+            padding: 5px;
+            text-decoration: none;
+            color: grey;
+            border-radius: 3px;
+            border: 1px solid black;
+            background-color: rgb(221, 214, 214);
+        }
+        li a:hover{
+            color: grey;
+            border-radius: 3px;
+            border: 1px solid black;
+            background-color: rgb(221, 214, 214);
+        }
+        li:hover ul{
+            display: block;
+        }
+        .menu1{
+            width: 77px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="monday.html" class="menu1">Понедельник</a></li>
+        <li><a href="tuesday.html" class="menu1">Вторник</a></li>
+        <li><a href="wednesday" class="menu1">Среда</a>
+            <ul>
+                <li><a href="breakfast.html" class="menu2">Завтрак</a></li>
+                <li><a href="lunch" class="menu2">Обед</a></li>
+                <li><a href="dinner" class="menu2">Ужин</a></li>
+            </ul>
+        </li>
+        <li><a href="thursday.html" class="menu1">Четверг</a></li>
+        <li><a href="friday.html" class="menu1">Пятница</a></li>
+        <li><a href="saturday.html" class="menu1">Суббота</a></li>
+    </ul>
+</body>
+</html>
