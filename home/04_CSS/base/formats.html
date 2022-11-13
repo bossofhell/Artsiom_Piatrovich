@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin-bottom: -16px;
+        }
+        h1~p{
+            width: 625px;
+            border: 1px solid grey;
+            border-radius: 0px 7px ;
+        }
+        a[href$='.doc']::before{
+            content: url(art1.png);
+        }
+        a[href^='art2']::after{
+            content: url(art2.jpg);
+        }
+        a[href*='pdf.']::after{
+            content: url(art4.png);
+        }
+        a[href*='zip']::after{
+            content: url(art5.gif);
+        }
+        h2~p{
+            border: none;
+        }
+        a[href$='doc123']::before{
+            content: url(art3.jpg);
+        }
+        a#ms:hover{
+            background: url(art2.jpg) no-repeat 100%;
+            padding-right: 21px;
+        }
+        a#pdf:hover{
+            background: url(art4.png) no-repeat 100%;
+            padding-right: 21px;
+        }
+        a#zip:hover{
+            background: url(art5.gif) no-repeat 100%;
+            padding-right: 21px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов.</h1>
+    <p>&nbsp;&nbsp;&nbsp;.DOC или .doc (от англ.<a href="document.doc">document</a>) - расширение имени файла, используемое для файлов,<br>
+        представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для<br>
+        обозначнеия простых текстовых файлов без формирования, однако позже стало<br>
+        использоваться для двоичных форматов с разметкой.<br>
+        <a href="art2.jpg">Документ MS Word</a></p>
+    <p>&nbsp;&nbsp;&nbsp;Portable Document Format (<a href="document.doc">PDF</a>) - межплатформенный формат электронных документов,<br>
+        разработанный фирмой Adobe Systems с использованием ряда возможностей языка<br>
+        Portstcript.<br>
+        <a href="pdf.pdf">Документ PDF</a><br><br></p>
+    <p>&nbsp;&nbsp;&nbsp;ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате<br>
+        обычно имеет расширение <a href="document.doc">zip</a> и хранит в сжатом или несжатом виде один или несколько<br>
+        файлов, которое можно из него извлечь путём распаковки с помощью специальной<br>
+        программы.<br>
+        <a href="zip">Архив</a></p>
+    <h2>Это список файлов</h2>
+    <p><a href="doc123" id="ms">Документ MS Word</a></p>
+    <p><a href="doc123" id="pdf">Документ PDF</a></p>
+    <p><a href="doc123" id="zip">Архив</a></p>
+</body>
+</html>
