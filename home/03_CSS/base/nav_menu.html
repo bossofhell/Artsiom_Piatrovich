@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+            div.MenuLevel1 { width: 95px }
+            div.MenuLevel1 > div { background-color: grey; border: solid black 1px; position: sta; cursor: pointer; border-radius: 3px; display: inline-block;}
+            div.MenuLevel2 { width: 57px; display: none }
+            div.MenuLevel2 > div { background-color: grey; border: solid black 1px; cursor: pointer; border-radius: 3px}
+            div.MenuLevel1 > div:hover div.MenuLevel2 { display: inline-block; position: relative; left: 100%; top: 0%; z-index: 1 }
+    </style>
+</head>
+<body>
+    <div class='MenuLevel1'>
+        <div id="div1">Понедельник</div>
+        <div id="div2">Вторник</div>
+        <div id="div3">
+            Среда
+            <div class='MenuLevel2'>
+                <div id="div4">Завтрак</div>
+                    <div class='MenuLevel2'>
+                        <div id="div5">Обед</div>
+                            <div class='MenuLevel2'>
+                                <div id="div6">Ужин</div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        <div id="div7">Четверг</div>
+        <div id="div8">Пятница</div>
+        <div id="div9">Суббота</div>
+    
+    </div>
+</body>
+</html>
